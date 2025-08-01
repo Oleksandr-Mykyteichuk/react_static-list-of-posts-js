@@ -8,7 +8,7 @@ export const PostList = ({ posts }) => {
           post={post}
           key={post.id}
           comments={post.comments}
-          user={post.users}
+          user={post.user}
         />
       ))}
     </div>

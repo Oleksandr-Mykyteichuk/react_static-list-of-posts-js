@@ -23,7 +23,7 @@ export const App = () => {
   const posts = postsFromServer.map(post => {
     return {
       ...post,
-      users: usersMap[post.userId],
+      user: usersMap[post.userId],
       comments: commentsMap[post.id],
     };
   });
